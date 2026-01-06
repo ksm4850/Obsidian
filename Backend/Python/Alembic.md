@@ -46,6 +46,9 @@ alembic upgrade/downgrade +-N
 
 # 해당 revision ID로 upgrade/downgrade 
 alembic upgrade/downgrade revisionID
+
+# 해당 revision ID로 현재버전 설정 (스크립트 실행하진 않음)
+alembic stamp revisionID
 ```
 
 변경 기록확인

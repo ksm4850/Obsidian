@@ -41,4 +41,23 @@ docker run -d \
 ```
 
 
+데이터 동기화
+양쪽 PC 등록
+```bash
+mc alias set {A이름} {host}:{port} {ACCESS_KEY} {SECRET_KEY}
+mc alias set {B이름} {host}:{port} {ACCESS_KEY} {SECRET_KEY}
+```
 
+mirror 실행
+- --overwrite : 덮어쓰기
+- --remove : 소스에 없는 파일은 대상에서 삭제
+- --retry : 실패시 재시도
+- --skip-errors : 에러 스킵
+- --watch --active-active : 양방향 동기화
+```bash
+mc mirror {A이름}/{bucket} {B이름}/{bucket} --overwirte --remove --retry
+```
+path단위도 가능
+```bash
+mc mirror {A이름}/{bucket}/{path} {B이름}/{bucket}/{path} --overwirte --remove --retry
+```
