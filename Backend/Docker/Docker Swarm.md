@@ -1,9 +1,15 @@
 
 ## Swarm 초기화 / 관리
+Docker Swarm 구동에 필요한 핵심포트
+- TCP 2377 - 클러스터 관리용
+- TCP/UDP 7946 - 노드간 통신용
+-  UDP 4789 - 오버레이 네트워크용 
 
 ```bash
 # 스웜 초기화
 docker swarm init
+# 외부 IP로 init
+docker swarm init --advertise-addr <공인IP>
 
 # 스웜 해제
 docker swarm leave --force
@@ -13,6 +19,11 @@ docker swarm join-token worker
 
 # 매니저 노드 조인 토큰 확인
 docker swarm join-token manager
+
+# 조인 제거
+docker swarm leave --force
+# 잔여 ingress 네트워크 정리
+docker network rm ingress 2>/dev/null docker network prune -f
 ```
 
 ## 노드 관리
