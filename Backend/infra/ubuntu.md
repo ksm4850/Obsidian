@@ -1,0 +1,19 @@
+기본 설치해야할것들
+
+```bash
+# 패키지 업데이트 
+sudo apt update && sudo apt upgrade -y
+# Docker 설치 
+curl -fsSL https://get.docker.com | sudo sh
+
+# ubuntu 유저에 Docker 권한 부여 
+sudo usermod -aG docker ubuntu
+
+# 깃 설치
+sudo apt install git -y
+```
+
+자주쓰ㅅ는거
+```
+ss -tnlp
+```

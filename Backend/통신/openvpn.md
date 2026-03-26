@@ -27,7 +27,10 @@ cp pki/private/my-client.key ~/client-configs/keys
 # crt 인증서 이동
 cp pki/issued/{파일명}.crt ~/client-configs/keys/
 ```
- 
+```
+로컬에서 파일 가져오기
+scp aws-entry:/home/ubuntu/sangmac.ovpn ./
+```
 
 인증서/키 취소
 ```bash
@@ -48,7 +51,3 @@ crl-verify /etc/openvpn/server/crl.pem
 systemctl restart openvpn@server
 ```
 
-연결된 클라 확인
-```
-sudo cat /var/log/openvpn/openvpn-status.log
-```
