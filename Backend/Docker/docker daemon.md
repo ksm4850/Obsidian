@@ -1,3 +1,6 @@
+---
+tags: [backend, docker]
+---
 gpu 리소스 사용하고싶을떄
 {
   "data-root": "/mnt/disk1/docker",
@@ -52,3 +55,6 @@ json
 - `docker-compose`에서 매번 runtime 지정하기 번거로울 때
 
 반대로 GPU를 일부 컨테이너만 쓴다면, `default-runtime`은 `runc`로 두고 필요한 컨테이너에만 `--runtime=nvidia`를 명시하는 게 더 안전합니다. GPU가 불필요한 컨테이너에까지 nvidia 런타임이 적용되면 nvidia-container-runtime이 없는 환경에서 문제가 생길 수 있기 때문입니다.
+## 관련 문서
+- [[Docker]]
+- [[Docker Swarm]]

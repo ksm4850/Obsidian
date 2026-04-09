@@ -1,3 +1,15 @@
+---
+tags:
+  - backend
+  - infra
+  - networking
+---
+
+ssh터널링
+```
+ssh -L 5432:엔드포인트:5432 aws-entry-1 -N
+```
+
 pem키 
 ```
 cd ~/.ssh/pem.pem
@@ -20,3 +32,7 @@ Host infra
     IdentityFile ~/.ssh/pem.pem
     ProxyJump aws-traefik
 ```
+## 관련 문서
+- [[AWS EC2]]
+- [[ubuntu]]
+- [[openvpn]]

@@ -1,3 +1,6 @@
+---
+tags: [backend, database]
+---
 ```sh
 docker run -d --name postgres_backup_local -e POSTGRES_HOST=223.130.155.240 -e POSTGRES_PORT=5432 -e POSTGRES_DB=slam -e POSTGRES_USER=slam -e POSTGRES_PASSWORD=pilab-240 -e SCHEDULE=@hourly -e BACKUP_KEEP_DAYS=1 -e POSTGRES_EXTRA_OPTS=-Fc -e BACKUP_SUFFIX=.dump -v $(pwd)/backups:/backups --restart unless-stopped prodrigestivill/postgres-backup-local:16
 ```
@@ -21,3 +24,6 @@ docker run -d --name postgres_backup_local -e POSTGRES_HOST=223.130.155.240 -e P
 ```sh
 docker-compose exec -T postgres pg_restore -U {유저명} -d {DB명} --if-exists --clean < {dump파일 위치}
 ```
+## 관련 문서
+- [[Postgres]]
+- [[Docker]]

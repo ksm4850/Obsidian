@@ -1,3 +1,9 @@
+---
+tags:
+  - backend
+  - grpc
+  - python
+---
 ## 목차
 
 1. [gRPC 개요](<#1. gRPC 개요>)
@@ -2065,3 +2071,8 @@ def ListUsers(self, request, context):
 - [Protocol Buffers 가이드](https://protobuf.dev/)
 - [gRPC Python 예제](https://github.com/grpc/grpc/tree/master/examples/python)
 - [Awesome gRPC](https://github.com/grpc-ecosystem/awesome-grpc)
+
+## 관련 문서
+- [[proto 작성]]
+- [[gRPC 참고 사이트]]
+- [[IPC (Inter-Process Communication)|IPC]]

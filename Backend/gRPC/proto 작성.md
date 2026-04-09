@@ -1,3 +1,8 @@
+---
+tags:
+  - backend
+  - grpc
+---
 # gRPC Protocol Buffers 작성 가이드
 
 ## 1. 기본 문법
@@ -586,3 +591,6 @@ enum GpuState {
 - [ ] 공통 타입은 별도 파일로 분리
 - [ ] buf lint 통과 확인
 - [ ] Breaking change 검증
+## 관련 문서
+- [[gRPC 가이드 기초|gRPC 가이드]]
+- [[gRPC 참고 사이트]]

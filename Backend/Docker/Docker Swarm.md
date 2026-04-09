@@ -1,5 +1,9 @@
+---
+tags: [backend, docker]
+---
 
 ## Swarm 초기화 / 관리
+기본 Docker 명령어는 [[Docker]] 참고
 Docker Swarm 구동에 필요한 핵심포트
 - TCP 2377 - 클러스터 관리용
 - TCP/UDP 7946 - 노드간 통신용
@@ -180,3 +184,8 @@ docker system info
 - 네트워크에 `name:` 지정하면 스택 prefix 없이 고정 이름 사용 가능
 
 
+
+## 관련 문서
+- [[Docker]]
+- [[Portainer]]
+- [[docker daemon]]

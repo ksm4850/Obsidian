@@ -1,3 +1,10 @@
+---
+tags:
+  - backend
+  - monitoring
+  - docker
+---
+
 ```yml
 prometheus:
     image: prom/prometheus:latest
@@ -22,3 +29,8 @@ prometheus:
 # https://prometheus.io/docs/prometheus/latest/querying/api/
 
 ```
+
+## 관련 문서
+- [[Docker]]
+- [[setting|Grafana 설정]]
+- [[grafana 템플릿모음|Grafana 템플릿]]

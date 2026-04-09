@@ -1,3 +1,6 @@
+---
+tags: [backend, docker]
+---
 
 ## 1. Portainer란?
 
@@ -266,3 +269,7 @@ docker run -d \
   -v /var/lib/docker/volumes:/var/lib/docker/volumes \
   portainer/agent:latest
 ```
+## 관련 문서
+- [[Docker]]
+- [[Docker Swarm]]
+- [[docker daemon]]

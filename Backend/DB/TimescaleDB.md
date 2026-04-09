@@ -1,3 +1,6 @@
+---
+tags: [backend, database]
+---
 일반 DB와 차이점
 
 ## 1. **데이터 저장 방식**
@@ -50,7 +53,10 @@ SELECT add_retention_policy('logs', INTERVAL '30 days');
 
 **1억 건 로그에서 최근 1시간 데이터 조회:**
 
-- PostgreSQL + 날짜 인덱스: 풀 테이블 스캔 또는 인덱스 스캔 → 느림
+- [[Postgres|PostgreSQL]] + 날짜 인덱스: 풀 테이블 스캔 또는 인덱스 스캔 → 느림
 - TimescaleDB: 해당 시간 chunk만 읽음 → 10~100배 빠름
 
 **결론**: 날짜 인덱싱만으로는 대용량 시계열 데이터의 물리적 저장/압축/관리 최적화가 안됩니다.
+
+## 관련 문서
+- [[Postgres]]

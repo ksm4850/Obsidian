@@ -1,4 +1,8 @@
-
+---
+tags:
+  - backend
+  - monitoring
+---
 
 https://github.com/stefanprodan/dockprom
 
@@ -6,3 +10,8 @@ https://github.com/stefanprodan/dockprom
 
 
 https://github.com/Blueswen/fastapi-observability
+
+## 관련 문서
+- [[docker setting|Prometheus]]
+- [[Docker]]
+- [[setting|Grafana 설정]]

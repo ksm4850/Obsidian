@@ -1,6 +1,7 @@
 ---
 tags:
   - backend
+  - storage
 ---
 ## 1. 개요
 [Github](https://github.com/minio/minio)
@@ -9,7 +10,7 @@ tags:
 - **MinIO**: 고성능, S3 호환 오브젝트 스토리지 서버
 - **언어**: Go
 - **용도**: 비정형 데이터 저장 (이미지, 로그, 백업 등)
-- **운영 환경**: On-Premise 또는 AWS EC2 등 클라우드 인스턴스
+- **운영 환경**: On-Premise 또는 [[AWS EC2]] 등 클라우드 인스턴스
 - **특징**
     - 완전한 S3 API 호환
     - 단일 실행 파일(bin)로 배포
@@ -61,3 +62,7 @@ path단위도 가능
 ```bash
 mc mirror {A이름}/{bucket}/{path} {B이름}/{bucket}/{path} --overwirte --remove --retry
 ```
+
+## 관련 문서
+- [[Docker]]
+- [[AWS EC2]]

@@ -1,3 +1,9 @@
+---
+tags:
+  - backend
+  - infra
+  - networking
+---
  
 **프로세스 간 통신**을 의미하며, 서로 다른 프로세스가 데이터를 주고받거나 동기화하는 메커니즘이다.
 
@@ -81,8 +87,8 @@
 
 |상황|추천 방식|
 |---|---|
-|FastAPI 워커 간 통신|Redis Pub/Sub, 메시지 큐|
-|마이크로서비스 간 통신|HTTP/gRPC, 메시지 브로커|
+|FastAPI 워커 간 통신|[[설정|Redis]] Pub/Sub, 메시지 큐|
+|마이크로서비스 간 통신|HTTP/[[gRPC 가이드 기초|gRPC]], 메시지 브로커|
 |같은 서버 내 프로세스 통신|Unix Socket, 공유 메모리|
 |내부 PC/서버 간 통신|ZeroMQ (ipc://, tcp://)|
 |분산 시스템 이벤트 처리|Kafka, RabbitMQ|
@@ -92,4 +98,10 @@
 - 실무에서는 직접적인 OS-level IPC보다 **Redis, RabbitMQ, Kafka** 같은 메시지 브로커를 더 많이 사용함
 - Python에서는 `multiprocessing` 모듈로 파이프, 큐, 공유 메모리 등을 쉽게 사용 가능
 - FastAPI + Uvicorn 환경에서는 워커 간 상태 공유 시 Redis 등 외부 저장소 권장
+
+## 관련 문서
+- [[gRPC 가이드 기초|gRPC]]
+- [[Socket.io]]
+- [[openvpn]]
+- [[클라우드플레어 터널링]]
 
