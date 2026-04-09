@@ -58,7 +58,3 @@ alembic stamp revisionID
 ```bash
 alembic history
 ```
-
-## 관련 문서
-- [[Postgres]]
-- [[Sqlalchemy]]

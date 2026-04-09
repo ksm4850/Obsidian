@@ -48,11 +48,6 @@ tags:
 - [[docker setting|Prometheus 설정]]
 - [[dozzle]] - 로그 뷰어
 
-## 통신
-- [[IPC (Inter-Process Communication)|IPC]]
-- [[openvpn]]
-- [[클라우드플레어 터널링]]
-
 ## Storage
 - [[MinIo]] - S3 호환 오브젝트 스토리지
 

@@ -16,10 +16,3 @@ postgres.conf
 - **`tcp_keepalives_count = 3`**: 3번 연속 응답이 없으면 연결이 끊어진 것으로 판단하고 서버 쪽에서 연결 정리.
 
 Python ORM 연결 풀 설정은 [[Sqlalchemy]], 스키마 마이그레이션은 [[Alembic]] 참고.
-
-## 관련 문서
-- [[TimescaleDB]]
-- [[PostgresBackup]]
-- [[Sqlalchemy]]
-- [[Alembic]]
-- [[Docker Swarm]]

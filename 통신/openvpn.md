@@ -56,9 +56,3 @@ crl-verify /etc/openvpn/server/crl.pem
 # 서비스 재시작
 systemctl restart openvpn@server
 ```
-
-## 관련 문서
-- [[mac ssh|SSH 설정]]
-- [[클라우드플레어 터널링]]
-- [[AWS EC2]]
-

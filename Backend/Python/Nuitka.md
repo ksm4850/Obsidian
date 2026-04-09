@@ -40,6 +40,3 @@ sudo apt-get install ccache  # 빌드 속도 향상
 ```bash
 xcode-select --install
 ```
-
-## 관련 문서
-- [[Cython]]

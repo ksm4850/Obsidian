@@ -62,7 +62,3 @@ path단위도 가능
 ```bash
 mc mirror {A이름}/{bucket}/{path} {B이름}/{bucket}/{path} --overwirte --remove --retry
 ```
-
-## 관련 문서
-- [[Docker]]
-- [[AWS EC2]]

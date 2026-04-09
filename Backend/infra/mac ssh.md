@@ -32,7 +32,3 @@ Host infra
     IdentityFile ~/.ssh/pem.pem
     ProxyJump aws-traefik
 ```
-## 관련 문서
-- [[AWS EC2]]
-- [[ubuntu]]
-- [[openvpn]]

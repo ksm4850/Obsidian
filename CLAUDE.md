@@ -9,7 +9,7 @@
    - `Backend/Backend MOC.md` 또는 `리눅스/리눅스 MOC.md` 확인 → 주제 카테고리 파악
    - `Grep`으로 키워드 검색 (frontmatter tags, 본문 모두)
    - 히트한 파일 `Read`
-   - 해당 파일의 `[[wiki-link]]`와 `## 관련 문서` 섹션을 따라가서 추가 문맥 수집
+   - 해당 파일의 본문 내 `[[wiki-link]]`를 따라가서 추가 문맥 수집
    - 필요 시 BFS처럼 2-3 홉까지 탐색
 3. **토큰 절약 탐색 규칙** (중요):
    - **Grep 먼저, Read는 최소화**: `Grep`에 `-n`, `-C 3` 옵션으로 매칭 라인만 확인. 파일 전체 Read는 꼭 필요할 때만.
@@ -44,17 +44,16 @@
 - `[[파일명]]` — 다른 파일 참조
 - `[[파일명|표시텍스트]]` — 별칭 표시
 - `[[#섹션|표시]]` — 파일 내 헤딩 참조
-- 각 파일 하단 `## 관련 문서` 섹션에 이웃 노드 나열
+- 링크는 본문 안에 문맥상 필요할 때만 사용 (하단 목록식 연결 지양)
 
 ## 탐색 예시
 
 **질문**: "Swarm 환경에서 Postgres 연결이 자꾸 끊기는데?"
 
 1. `Grep "Swarm.*Postgres\|keepalive" --glob "*.md"`
-2. `Backend/DB/Postgres.md` → tcp_keepalives 설정 발견
-3. 파일의 `## 관련 문서` → `[[Sqlalchemy]]`, `[[Docker Swarm]]` 확인
-4. `Backend/DB/Sqlalchemy.md` Read → `pool_pre_ping`, `pool_recycle` 발견
-5. 종합 답변 + 두 파일 링크 제시
+2. `Backend/DB/Postgres.md` → tcp_keepalives 설정 발견, 본문 내 `[[Sqlalchemy]]`, `[[Docker Swarm]]` 링크 확인
+3. `Backend/DB/Sqlalchemy.md` Read → `pool_pre_ping`, `pool_recycle` 발견
+4. 종합 답변 + 두 파일 링크 제시
 
 **질문**: "Redis 메모리 꽉 차면 어떻게 삭제?"
 

@@ -11,5 +11,3 @@ setup.py 에 설정에 맞춰서 빌드
 ```bash
 python setup.py build_ext --inplace
 ```
-## 관련 문서
-- [[Nuitka]]

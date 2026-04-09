@@ -57,6 +57,3 @@ SELECT add_retention_policy('logs', INTERVAL '30 days');
 - TimescaleDB: 해당 시간 chunk만 읽음 → 10~100배 빠름
 
 **결론**: 날짜 인덱싱만으로는 대용량 시계열 데이터의 물리적 저장/압축/관리 최적화가 안됩니다.
-
-## 관련 문서
-- [[Postgres]]

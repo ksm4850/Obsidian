@@ -24,6 +24,3 @@ docker run -d --name postgres_backup_local -e POSTGRES_HOST=223.130.155.240 -e P
 ```sh
 docker-compose exec -T postgres pg_restore -U {유저명} -d {DB명} --if-exists --clean < {dump파일 위치}
 ```
-## 관련 문서
-- [[Postgres]]
-- [[Docker]]

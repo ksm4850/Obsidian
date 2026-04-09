@@ -184,8 +184,3 @@ docker system info
 - 네트워크에 `name:` 지정하면 스택 prefix 없이 고정 이름 사용 가능
 
 
-
-## 관련 문서
-- [[Docker]]
-- [[Portainer]]
-- [[docker daemon]]

@@ -34,10 +34,3 @@ docker buildx 빌드 \
 ```
 
 멀티노드 배포는 [[Docker Swarm]] 참고.
-
-## 관련 문서
-- [[Docker Swarm]]
-- [[Portainer]]
-- [[docker daemon]]
-- [[lazydocker]]
-- [[dozzle]]

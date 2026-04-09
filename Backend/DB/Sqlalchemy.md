@@ -10,8 +10,3 @@ tags: [backend, database, python]
 - **`pool_timeout=30`**: 풀에서 연결을 가져올 때 최대 대기 시간(초). 30초 안에 연결을 못 얻으면 `TimeoutError` 발생.
 
 [[Postgres|PostgreSQL]] 연결 풀 관리용.
-
-## 관련 문서
-- [[Postgres]]
-- [[Alembic]]
-- [[Docker Swarm]]

@@ -25,9 +25,3 @@ Docker 설치 후 사용법은 [[Docker]] 참고
 ```
 ss -tnlp
 ```
-
-## 관련 문서
-- [[Docker]]
-- [[AWS EC2]]
-- [[mac ssh|SSH 설정]]
-- [[리눅스 기본 명령어]]
