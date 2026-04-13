@@ -51,5 +51,8 @@ tags:
 ## Storage
 - [[MinIo]] - S3 호환 오브젝트 스토리지
 
+## Architecture
+- [[클린 아키텍처]] - 클린 아키텍처 원칙 및 FastAPI 폴더 구조
+
 ## Git
 - [[submodule]]
